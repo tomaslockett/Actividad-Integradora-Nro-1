@@ -70,6 +70,10 @@ namespace Actividad_Integradora_Nro_1
             }
         }
 
+        ~Personas()
+        {
+            MessageBox.Show($"El dni es{Dni}");
+        }
 
     }
 }

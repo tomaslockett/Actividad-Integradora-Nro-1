@@ -16,7 +16,7 @@ namespace Actividad_Integradora_Nro_1
             Precio = PPrecio;
             Año = PAño;
         }
-        public Auto(string PPatente, string PMarca, string PModelo, string PAño, decimal PPrecio,Personas PDueño) : this(PPatente,PMarca,PModelo,PAño,PPrecio)
+        public Auto(string PPatente, string PMarca, string PModelo, string PAño, decimal PPrecio, Personas PDueño) : this(PPatente, PMarca, PModelo, PAño, PPrecio)
         {
             dueño = PDueño;
         }
@@ -30,7 +30,7 @@ namespace Actividad_Integradora_Nro_1
 
         private Personas dueño;
 
-       
+
 
         public string QuienEsDueño
         {
@@ -43,7 +43,7 @@ namespace Actividad_Integradora_Nro_1
                 }
                 return string.Empty;
             }
-        } 
+        }
         public Personas Dueño
         {
             set
@@ -54,6 +54,10 @@ namespace Actividad_Integradora_Nro_1
             {
                 return dueño;
             }
+        }
+        ~Auto()
+        {
+            MessageBox.Show($"La patente es:{Patente}");
         }
     }
 }

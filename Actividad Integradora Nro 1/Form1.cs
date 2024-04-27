@@ -12,10 +12,10 @@ namespace Actividad_Integradora_Nro_1
         {
             InitializeComponent();
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            ListaDeAutos.Add(new Auto("123456789", "Toyota", "Yaris", "2016", 200000));
-            ListaDeAutos.Add(new Auto("758954158", "Ferrari", "F40", "1998", 286123));
-            ListaDePersonas.Add(new Personas("987654321", "Tomas", "Lockett"));
-            ListaDePersonas.Add(new Personas("753159846", "Pachu", "Soria"));
+            ListaDeAutos.Add(new Auto("ERA234", "Toyota", "Yaris", "2016", 200000));
+            ListaDeAutos.Add(new Auto("UIA123", "Ferrari", "F40", "1998", 286123));
+            ListaDePersonas.Add(new Personas("98765432", "Tomas", "Lockett"));
+            ListaDePersonas.Add(new Personas("75315984", "Pachu", "Perez"));
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = ListaDePersonas;
             dataGridView2.DataSource = null;
